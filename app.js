@@ -2,9 +2,9 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.showScanQrPopup("")
+tg.showScanQrPopup("");
 
-tg.onEvent('qrTextReceived', tg.sendData(this.data))
+tg.onEvent('qrTextReceived', tg.sendData(this.data));
 
 //tg.sendData('тест')
 
