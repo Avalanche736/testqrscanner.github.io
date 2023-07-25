@@ -2,7 +2,9 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.showScanQrPopup("");
+tg.showScanQrPopup("", function(text) {
+  tg.sendData(text);
+            });
 
 tg.onEvent('qrTextReceived', tg.sendData(this.data));
 
