@@ -4,6 +4,7 @@ tg.expand();
 
 tg.showScanQrPopup("", function(text) {
   tg.sendData(text);
+  return true;
             });
 
 tg.onEvent('qrTextReceived', tg.sendData(this.data));
