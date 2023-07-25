@@ -2,7 +2,9 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.sendData('тест')
+tg.showScanQrPopup("")
 
-document.write('Тест метода sendData');
+//tg.sendData('тест')
+
+//document.write('Тест метода sendData');
 
