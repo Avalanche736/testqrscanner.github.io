@@ -9,8 +9,7 @@ if (tg.platform != "unknown" && tg.isVersionAtLeast('6.4')) {
                           tg.sendData(text);
                           return true;
                           });
-
-  //tg.onEvent('qrTextReceived', tg.sendData(this.data));
+  
 } else if (tg.platform == "unknown") {
   document.write('Это приложение следует запускать из клиента telegram');
 } else if (!tg.isVersionAtLeast('6.4')) {
