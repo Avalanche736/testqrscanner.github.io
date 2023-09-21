@@ -2,6 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
+document.write('qr code scanner');
+
 //check that platform is telegram and version is at least 6.4
 if (tg.platform != "unknown" && tg.isVersionAtLeast('6.4')) {
   
